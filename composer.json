@@ -1,0 +1,14 @@
+{
+    "name": "dsv-su/sukat-carddav",
+    "description": "CardDAV server for SUKAT",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Per Olofsson",
+            "email": "pelle@dsv.su.se"
+        }
+    ],
+    "require": {
+        "sabre/dav": "~3.0.0"
+    }
+}
