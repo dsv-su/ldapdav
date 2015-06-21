@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f44eec6dc084bd8a92056e3024e7ec70",
+    "hash": "2a0d8e5a3f81bf08bf731789d7bbfcba",
     "packages": [
         {
             "name": "81square/tiesa-ldap",

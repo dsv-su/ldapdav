@@ -1,9 +1,11 @@
 <?php
+namespace DsvSu\LdapDav;
+
 use Sabre\DAV;
 use Sabre\CardDAV;
 use Sabre\VObject\Component\VCard;
 
-class SukatCard extends DAV\File implements CardDAV\ICard
+class Card extends DAV\File implements CardDAV\ICard
 {
     private $name;
     private $data;

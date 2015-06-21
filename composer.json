@@ -1,6 +1,6 @@
 {
-    "name": "dsv-su/sukatdav",
-    "description": "CardDAV server for SUKAT",
+    "name": "dsv-su/ldapdav",
+    "description": "LDAP-to-CardDAV gateway",
     "license": "MIT",
     "authors": [
         {
@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "": ""
+            "DsvSu\\LdapDav\\": ""
         }
     },
     "require": {

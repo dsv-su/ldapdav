@@ -1,16 +1,18 @@
 <?php
+namespace DsvSu\LdapDav;
+
 use Sabre\DAV;
 use Sabre\CardDAV;
 use Toyota\Component\Ldap;
 
-class SukatAddressBook extends DAV\Collection implements CardDAV\IAddressBook, DAV\IMultiGet
+class AddressBook extends DAV\Collection implements CardDAV\IAddressBook, DAV\IMultiGet
 {
     private static $ATTRS = [
         'uid', 'cn', 'givenName', 'sn', 'telephoneNumber'
     ];
     /** @var Ldap\Core\Manager */
     private $ldap;
-    /** @var SukatCard[]|null */
+    /** @var Card[]|null */
     private $children;
     
     public function __construct($base_dn)
@@ -45,7 +47,7 @@ class SukatAddressBook extends DAV\Collection implements CardDAV\IAddressBook, D
             $this->children = [];
             foreach ($entries as $entry) {
                 $this->children[$entry->get('uid')[0] . '.vcf']
-                        = new SukatCard($entry);
+                        = new Card($entry);
             }
         }
         return $this->children;
@@ -92,7 +94,7 @@ class SukatAddressBook extends DAV\Collection implements CardDAV\IAddressBook, D
         );
 
         if ($entries->current()) {
-            return new SukatCard($entries->current());
+            return new Card($entries->current());
         } else {
             throw new DAV\Exception\NotFound('Not Found');
         }
