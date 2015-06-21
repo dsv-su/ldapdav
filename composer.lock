@@ -4,8 +4,65 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bfa6ad6aaa8229e96fde34730a5d2115",
+    "hash": "43299dbb9c2c6f1c43d4aca5f6506802",
     "packages": [
+        {
+            "name": "81square/tiesa-ldap",
+            "version": "v1.0.1",
+            "target-dir": "Toyota/Component/Ldap",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/81square/ldap.git",
+                "reference": "97b0f331892bdf1a89172bb149ba1950c9d52b75"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/81square/ldap/zipball/97b0f331892bdf1a89172bb149ba1950c9d52b75",
+                "reference": "97b0f331892bdf1a89172bb149ba1950c9d52b75",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ldap": "*",
+                "php": ">=5.4.22"
+            },
+            "replace": {
+                "tiesa/ldap": "1.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=3.7.13"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Toyota\\Component\\Ldap\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cyril Cottet",
+                    "email": "cyril.cottet@gmail.com"
+                },
+                {
+                    "name": "Maarten van Zanten",
+                    "email": "info@81square.nl"
+                }
+            ],
+            "description": "LDAP made easy - supports LDAP paged result (fork of tiesa/ldap)",
+            "homepage": "https://github.com/81square/ldap",
+            "keywords": [
+                "ldap"
+            ],
+            "time": "2015-02-19 09:51:15"
+        },
         {
             "name": "sabre/dav",
             "version": "3.0.0",

@@ -8,7 +8,13 @@
             "email": "pelle@dsv.su.se"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "": ""
+        }
+    },
     "require": {
-        "sabre/dav": "~3.0.0"
+        "sabre/dav": "~3.0.0",
+        "81square/tiesa-ldap": "^1.0"
     }
 }
